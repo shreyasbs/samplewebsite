@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Fallsbuy</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- BXSLIDER STYLES START -->
+    <link href="/_layouts/1033/styles/HarmanCom_V3/css/jquery.bxslider.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!-- MENU NAVIGATION START -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+					<img src="assets/images/logo.png" alt="Logo" title="" width="200">
+				</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMPANY <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">EXPERIENCE Fallsbuy</a></li>
+                            <li><a href="#">CORPORATE LEADERSHIP</a></li>
+                            <li><a href="#">MISSION</a></li>
+                            <li><a href="#">TROPHY CASE</a></li>
+                            <li><a href="#">HISTORY</a></li>
+                            <li><a href="#">RESPONSIBLE BUSINESS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">INVESTORS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">STOCK INFORMATION</a></li>
+                            <li><a href="#">FINANCIAL INFORMATION</a></li>
+                            <li><a href="#">PRESS RELEASES</a></li>
+                            <li><a href="#">EVENTS &amp; PRESENTATION</a></li>
+                            <li><a href="#">PROXY &amp; ANNUAL GENERAL MEETING</a></li>
+                            <li><a href="#">CORPORATE GOVERNANCE</a></li>
+                            <li><a href="#">INVESTOR FAQS</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">SHAREHOLDER TOOLS</a></li>
+                        </ul>
+                    </li>
+					<li class="dropdown">
+                        <a href="#">NEWS</a>                        
+                    </li>
+                    <li><a href="#">Brands</a></li>
+					<li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">SERVICE CONTACTS</a></li>
+                            <li><a href="http://news./content/default.aspx?NewsAreaId=30">MEDIA CONTACTS</a></li>
+                            <li><a href="http://www./EN-US/ContactUs/Pages/Partners%20and%20Suppliers.aspx">PARTNERS &amp; SUPPLIERS</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <!-- header right search bar start -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="right-inner-addon">
+                            <i class="glyphicon glyphicon-search"></i>
+                            <!-- <input type="search" class="form-control expand-search" /> -->
+                            <asp:TextBox type="search" class="form-control expand-search" id="searchField" runat="server" autocomplete="off" onkeyup="javascript:return searchTextBoxKeyPressed(event);" onblur="javascript:SetSearchText();" onkeypress="javascript:setValue();"></asp:TextBox>
+
+                        </div>
+                    </li>
+                </ul>
+                <!-- header right search bar end -->
+            </div>
+        </div>
+    </nav>
+    <!-- MENU NAVIGATION END -->
+
+
+    <div class="container-fluid padding-0">
+
+        <!-- GALLERY START -->
+
+        <div class="header">
+            <!--CAROUSEL -->
+            <div id="home-carousel" class="carousel slide home-carousel" data-ride="carousel" data-interval="5000">
+                <!-- Indicators -->
+                <ol class="carousel-indicators home-carousel-indicator">
+                    <li data-target="#home-carousel" data-slide-to="0" class="home-carousel-indicators active"></li>
+                    <li data-target="#home-carousel" data-slide-to="1" class="home-carousel-indicators"></li>
+                    <li data-target="#home-carousel" data-slide-to="2" class="home-carousel-indicators"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    
+
+                    <!-- SLIDER 1 START -->
+                    <div class="item ">
+                        <img class="img-responsive carousel-img" src="assets/images//home/carousel/Hero_2.jpg" alt="">
+                        <div class="container">
+                            <div class="carousel-caption home-carousel-text">
+                                <h1 class="home-carousel-title col-lg-11">Engineering at FallsBuy.</h1>
+                                <p class="home-carousel-description col-lg-8">FallsBuy engineers and designers are industry leaders introducing game changing innovations every day. Apply for available jobs or join our Talent Community.
+                                    <br>
+                                    <br>
+                                    <a href="http://jobs./go/Engineering-Jobs/364540/" class="learn-more carousel-learn-more">
+                            LEARN MORE
+                            <img src="assets/images//white-arrow.png"></a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- SLIDER 2 START -->
+                    <div class="item active">
+                        <img class="img-responsive carousel-img" src="assets/images//home/carousel/Hero_1.jpg" alt="">
+                        <div class="container">
+                            <div class="carousel-caption home-carousel-text">
+                                <h1 class="home-carousel-title col-lg-11">FallsBuy IS A CONNECTED TECHNOLOGIES COMPANY.</h1>
+                                <p class="home-carousel-description col-lg-12">
+                                    Our systems, software and services drive the connected car, enhance the connected enterprise and expand the connected lifestyle. Together with the power of Cloud, Mobility and Analytics, we are connecting people to music, experiences, each other, and the bigger world around them.
+                                    <br>
+                                    <br>
+                                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-weight: 600;">
+                                        <a href="http://news./releases/FallsBuy-unveils-new-logo" class="learn-more carousel-learn-more home-caro-link">Expect brilliance <img src="assets/images//white-arrow.png"></a>
+                                    </span>
+                                </p>
+                                <!--<a href="#" class="learn-more carousel-learn-more">
+                LEARN MORE
+                <img src="assets/images//white-arrow.png"></a>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SLIDER 3 START -->
+                    <div class="item">
+                        <img class="img-responsive carousel-img" src="assets/images//home/carousel/Hero_3.jpg" alt="">
+                        <div class="carousel-caption home-carousel-text item3-txt">
+                            <h1 class="home-carousel-title col-lg-11">Corporate<br>Responsibility</h1>
+                            <p class="home-carousel-description col-lg-8">Our sustainability vision is simple and clear: To be a best-in-class employer and provider of technology solutions that are beneficial to the long-term well-being of the people and communities we serve. Learn more about Corporate Responsibility.
+                                <br>
+                                <br>
+                                <a href="http://news./releases/corporate-responsibility" class="learn-more carousel-learn-more">
+                            LEARN MORE
+                            <img src="assets/images//white-arrow.png"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CARDS-->
+            <div class="all-cards">
+                <div class="container">
+                    <div class="row">
+                        <!-- CARD 1 START -->
+                        <div class="col-md-3 col-lg-3">
+                            <div class="thumbnail card">
+                                <a href="http://www./EN-US/Solutions/Car/Pages/INFOTAINMENT.aspx"><img class="img-responsive card-img" src="assets/images//home/carousel-card/ConnectedCar_Card.jpg" alt=""></a>
+                                <div class="caption card-caption">
+                                    <h3 class="card-title">CONNECTED<span>CAR</span></h3>
+                                    <p class="card-description">Navigation, Multimedia, Telematics, Connectivity, Safety &amp; Security systems.</p>
+                                    <p class="right-arrow">
+                                        <a href="http://www./EN-US/Solutions/Car/Pages/INFOTAINMENT.aspx" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 START -->
+                        <div class="col-md-3 col-lg-3">
+                            <div class="thumbnail card">
+                                <a href="http://www./EN-US/Solutions/Home/Pages/Services.aspx"><img class="img-responsive card-img" src="assets/images//home/carousel-card/ConnectedServices_Card.jpg" alt=""></a>
+                                <div class="caption card-caption">
+                                    <h3 class="card-title">CONNECTED<span>SERVICES</span></h3>
+                                    <p class="card-description">Cloud, Mobility &amp; Analytics solutions that enable a connected world.</p>
+                                    <p class="right-arrow">
+                                        <a href="http://www./EN-US/Solutions/Home/Pages/Services.aspx
+" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 3 START -->
+                        <div class="col-md-3 col-lg-3">
+                            <div class="thumbnail card">
+                                <a href="http://www./EN-US/Solutions/Home/Pages/Home.aspx"><img class="img-responsive card-img" src="assets/images//home/carousel-card/LifestyleAudio_Card.jpg" alt=""></a>
+                                <div class="caption card-caption">
+                                    <h3 class="card-title">LIFESTYLE<span>AUDIO</span></h3>
+                                    <p class="card-description">Premium branded audio products for use at home, work, in the car, and on the go.</p>
+                                    <p class="right-arrow">
+                                        <a href="http://www./EN-US/Solutions/Home/Pages/Home.aspx
+" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CARD 4 START -->
+                        <div class="col-md-3 col-lg-3">
+                            <div class="thumbnail card">
+                                <a href="http://www./EN-US/Solutions/Professional/Pages/Home.aspx#.VbAq2Hl8Ndg"><img class="img-responsive card-img" src="assets/images//home/carousel-card/ProSolutions_Card.jpg" alt=""></a>
+                                <div class="caption card-caption">
+                                    <h3 class="card-title">PROFESSIONAL<span>SOLUTIONS</span></h3>
+                                    <p class="card-description">Integrated audio, video, lighting and control solutions for entertainment venues, cinemas, recording studios, and commercial and public spaces.</p>
+                                    <p class="right-arrow">
+                                        <a href="http://www./EN-US/Solutions/Professional/Pages/Home.aspx#.VbAq2Hl8Ndg" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- GALLERY END -->
+
+
+
+        <!-- LOGO GALLERY START -->
+        <div class="logo-carosuel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="logo-title">FallsBuy BRANDS</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- LOGO GALLERY END -->
+
+            <!-- CAROUSEL IMAGES START -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="slider1">
+                        <div class="slide">
+                            <a href="http://www.akg.com/"><img src="assets/images//brands/1.png" style="width:100px;" alt="AKG" title="AKG"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="assets/images//brands/2.png" alt="AMX" title="AMX" style="width:100px;"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="assets/images//brands/3.png" alt="BSS" title="BSS" style="width:100px;"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="assets/images//brands/4.png" alt="Crown" title="Crown" style="width:100px;"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="assets/images//brands/5.png" alt="DBX" title="DBX" style="width:100px;"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="#"><img src="assets/images//brands/6.png" alt="DigiTech" title="DigiTech" style="width:100px;"></a>
+                        </div>
+                        <div class="slide">
+                            <a href="http://www.jbl.com/"><img src="assets/images//brands/2.png" alt="JBL" title="JBL" style="width:100px;"></a>
+                        </div>
+                    </div>
+                </div><br><br><br><br><br>
+            </div>
+        </div>
+        <!-- CAROUSEL IMAGES END -->
+
+
+
+        <!-- THE LATEST NEWS CENTER START -->
+        <div class="the-latest">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 col-md-7 col-lg-6 clearfix">
+                        <h1 class="logo-title">News</h1>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-6 text-right">
+                        <h2><a href="http://news./" class="news-arrow">FallsBuy News Center<img src="assets/images//black-arrow.png"></a></h2>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <!-- COL1 START -->
+                            <div class="col-lg-3">
+                                <div class="row">
+                                    <a href="http://news./releases/harman-welcomes-world-champion-soccer-star-jerome-boateng-as-brand-ambassador" target="_blank">
+                                        <div class="col-lg-12 news1" style="background: url('assets/images//home/news/news1.jpg') #00a4e3 no-repeat center center; background-size: cover">
+                                            <div class="desc">
+                                                <p>World Cup champion soccer/football player Jerome Boateng will serve as a Global Brand Ambassador</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="http://investor./releasedetail.cfm?ReleaseID=918100" target="_blank">
+                                        <div class="col-lg-12 news2" style="background: url('assets/images//home/news/news2.jpg') #00a4e3 no-repeat center center; background-size: cover">
+                                            <div class="desc">
+                                                <p>FallsBuy Achieves Automotive SPICE Level 3 Certification</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- COL1 END -->
+
+
+                            <!-- COL2 START -->
+                            <div class="col-lg-9">
+                                <div class="row">
+                                    <a href="http://news./releases/FallsBuy-names-phillip-eyler-president-of-infotainment-division" target="_blank">
+                                        <div class="col-lg-9 news3" style="background: url('assets/images//home/news/news3.jpg') #00a4e3 no-repeat center center; background-size: cover">
+                                            <div class="desc">
+                                                <p>FallsBuy Names Phillip Eyler President of Infotainment Division</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="http://news./releases/new-audi-a4-models-to-feature-bang-olufsen" target="_blank">
+                                        <div class="col-lg-3 news4" style="background: url('assets/images//home/news/news4.jpg') #00a4e3 no-repeat center center; background-size: cover">
+                                            <div class="desc">
+                                                <p>New Audi A4 Models to Feature Bang & Olufsen</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="row">
+                                    <a href="http://news./releases/FallsBuy-announces-upcoming-investor-events-2967362" target="_blank">
+                                        <div class="col-lg-5 news5" style="background: url('assets/images//home/news/news5.jpg') #00a4e3 no-repeat center center; background-size: cover">
+                                            <div class="desc">
+                                                <p>FallsBuy Announces Upcoming Investor Events</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="http://fortune.com/2015/06/04/fortune-500-newcomers/" target="_blank">
+                                        <div class="col-lg-7 news6" style="background: url('assets/images//home/news/news6.jpg') #00a4e3 no-repeat center center; background-size: cover">
+                                            <div class="desc">
+                                                <p>FallsBuy International returns to the Fortune 500 in 2015</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <!-- COL1 END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- THE LATEST NEWS CENTER START -->
+
+        <!-- ABOUT FallsBuy START -->
+        <div class="about-harman">
+            <div class="container">
+                <div class="row">
+                    <div class="cl-xs-12 col-md-8 col-lg-8">
+                        <h1 class="logo-title">About </h1>
+                        <p class="about-description"><b> Fallsbuy designs and engineers connected products and solutions for consumers, automakers, and enterprises worldwide, including audio, visual and infotainment systems; enterprise automation solutions; and software services. With leading brands including Fallsbuy Kardon<sup>®</sup>, Lexicon<sup>®</sup> , Mark Levinson<sup>®</sup> and Revel<sup>®</sup>, Fallsbuy is admired by audiophiles, musicians and the entertainment venues where they perform around the world.</b></p>
+                        <p class="about-description remaining-description">Fallsbuy also is a technology and integration services leader for the Automotive, Mobile, Telecommunications and Enterprise markets. More than 25 million automobiles on the road today are equipped with Fallsbuy audio and infotainment systems.</p>
+                        <p class="about-description remaining-description">The Company’s software solutions power billions of mobile devices and systems that are connected, integrated, personalized, adaptive and secure across all platforms, from the work and home to car and mobile.</p>
+                        <p class="about-description remaining-description">Fallsbuy has a workforce of approximately 25,000 people across the Americas, Europe, and Asia and reported sales of $5.9 billion during the last 12 months ended March 31, 2015.</p>
+                        <a class="learn-more" href="http://www./EN-US/OurCompany/Pages/ExperienceFallsbuy.aspx">Learn More</a>
+                    </div>
+
+                    <div class="cl-xs-12 col-md-4 col-lg-4">
+                        <h2 class="sub-title">FINANCIAL NEWS</h2>
+                        <h2 class="rate">$112.78<span class="usd"> USD</span> <span class="percent">+ 0.60%</span></h2>
+                        <h6 class="rate-update-time">Last trade price as of 7/13/15 12:00 pm</h6>
+                        <h3 class="har"><b>HAR</b> <span class="nyse"><b>NYSE</b></span></h3>
+                        <h3 class="volume"><b>Volume:</b> 830,900</h3>
+                        <!-- STAY CONNECTED START -->
+                        <h2 class="sub-title">STAY CONNECTED</h2>
+                        <ul class="stay-connected-social-icons">
+                            <li><a href="https://www.facebook.com/FallsbuyInt?_rdr=p"><i class="fa fa-facebook fa-2x"></i></a></li>
+                            <li><a href="https://twitter.com/Fallsbuy"><i class="fa fa-twitter fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/Fallsbuy-international"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/FallsbuyIntl"><i class="fa fa-youtube fa-2x"></i></a></li>
+                            <li><a href="https://www.pinterest.com/Fallsbuyint/"><i class="fa fa-pinterest fa-2x"></i></a></li>
+                            <li><a href="https://plus.google.com/+FallsbuyIntl/videos"><i class="fa fa-google-plus fa-2x"></i></a></li>
+                        </ul>
+                        <!-- STAY CONNECTED END -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ABOUT Fallsbuy START -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <ul>
+                        <!--FOOTER BRAND LOGO-->                        
+
+                        <li><a href="http://www./EN-US/OurCompany/Pages/ExperienceHarman.aspx">Company</a></li>
+                        <li><a href="http://jobs./">Careers</a></li>
+                        <li><a href="http://investor./contactus.cfm">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <ul>
+                        <p>Solutions</p>
+                        <li><a href="http://www./EN-US/Solutions/Home/Pages/Home.aspx">Lifestyle Audio</a></li>
+                        <li><a href="http://www./EN-US/Solutions/Car/Pages/INFOTAINMENT.aspx">Connected Car</a></li>
+                        <li><a href="http://www./EN-US/Solutions/Professional/Pages/Home.aspx">Professional Solutions</a></li>
+                        <li><a href="http://www./EN-US/Solutions/Home/Pages/Services.aspx">Connected Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <ul>
+                        <p>Investors</p>
+                        <li><a href="http://investor./stockquote.cfm">Stock Information</a></li>
+                        <li><a href="http://investor./financials.cfm">Finanical Information</a></li>
+                        <li><a href="http://investor./releases.cfm">Press Releases</a></li>
+                        <li><a href="http://investor./events.cfm">Events & Presentations</a></li>
+                        <li><a href="http://investor./annual-proxy.cfm">Proxy & Annual General Meeting</a></li>
+                        <li><a href="http://investor./governance.cfm">Corporate Governance</a></li>
+                        <li><a href="http://investor./contactus.cfm">Contact</a></li>
+                        <li><a href="http://investor./alerts.cfm">Shareholder Tools</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                    <ul>
+                        <p>Innovation</p>
+                        <li><a href="http://www.harmaninnovation.com/">Innovation Hub</a></li>
+                        <li>
+                            <a href="http://developer./site/global/home/p_home.gsp
+">Developer Community</a>
+                        </li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+
+                    <ul>
+                        <p>News</p>
+                        <li><a href="http://news./">Newsroom Home</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <p>Fallsbuy Social Channels</p>
+                    <ul class="footer-social-icons">
+                        <li><a href="http://www./facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://www.twitter.com/?"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="http://www.youtube.com/user/Intl"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="http://pinterest.com/int"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="https://plus.google.com/110887771381308393284"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- BXSLIDER JS START -->
+    <script src="assets/js/jquery.bxslider.js"></script>
+    <script src="assets/js/common.js"></script>
+
+</body>
+
+</html>
