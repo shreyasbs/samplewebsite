@@ -1,522 +1,647 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Fallsbuy</title>
-
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-
-    <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-    <!-- BXSLIDER STYLES START -->
-    <link href="/_layouts/1033/styles/HarmanCom_V3/css/jquery.bxslider.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-    <!-- MENU NAVIGATION START -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-					<img src="assets/images/logo.png" alt="Logo" title="" width="200">
-				</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMPANY <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">EXPERIENCE Fallsbuy</a></li>
-                            <li><a href="#">CORPORATE LEADERSHIP</a></li>
-                            <li><a href="#">MISSION</a></li>
-                            <li><a href="#">TROPHY CASE</a></li>
-                            <li><a href="#">HISTORY</a></li>
-                            <li><a href="#">RESPONSIBLE BUSINESS</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">INVESTORS<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">STOCK INFORMATION</a></li>
-                            <li><a href="#">FINANCIAL INFORMATION</a></li>
-                            <li><a href="#">PRESS RELEASES</a></li>
-                            <li><a href="#">EVENTS &amp; PRESENTATION</a></li>
-                            <li><a href="#">PROXY &amp; ANNUAL GENERAL MEETING</a></li>
-                            <li><a href="#">CORPORATE GOVERNANCE</a></li>
-                            <li><a href="#">INVESTOR FAQS</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                            <li><a href="#">SHAREHOLDER TOOLS</a></li>
-                        </ul>
-                    </li>
-					<li class="dropdown">
-                        <a href="#">NEWS</a>                        
-                    </li>
-                    <li><a href="#">Brands</a></li>
-					<li><a href="#">About</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CONTACT<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">SERVICE CONTACTS</a></li>
-                            <li><a href="http://news./content/default.aspx?NewsAreaId=30">MEDIA CONTACTS</a></li>
-                            <li><a href="http://www./EN-US/ContactUs/Pages/Partners%20and%20Suppliers.aspx">PARTNERS &amp; SUPPLIERS</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-
-                <!-- header right search bar start -->
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <div class="right-inner-addon">
-                            <i class="glyphicon glyphicon-search"></i>
-                            <!-- <input type="search" class="form-control expand-search" /> -->
-                            <asp:TextBox type="search" class="form-control expand-search" id="searchField" runat="server" autocomplete="off" onkeyup="javascript:return searchTextBoxKeyPressed(event);" onblur="javascript:SetSearchText();" onkeypress="javascript:setValue();"></asp:TextBox>
-
-                        </div>
-                    </li>
-                </ul>
-                <!-- header right search bar end -->
-            </div>
-        </div>
-    </nav>
-    <!-- MENU NAVIGATION END -->
-
-
-    <div class="container-fluid padding-0">
-
-        <!-- GALLERY START -->
-
-        <div class="header">
-            <!--CAROUSEL -->
-            <div id="home-carousel" class="carousel slide home-carousel" data-ride="carousel" data-interval="5000">
-                <!-- Indicators -->
-                <ol class="carousel-indicators home-carousel-indicator">
-                    <li data-target="#home-carousel" data-slide-to="0" class="home-carousel-indicators active"></li>
-                    <li data-target="#home-carousel" data-slide-to="1" class="home-carousel-indicators"></li>
-                    <li data-target="#home-carousel" data-slide-to="2" class="home-carousel-indicators"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-
-                    
-
-                    <!-- SLIDER 1 START -->
-                    <div class="item ">
-                        <img class="img-responsive carousel-img" src="assets/images//home/carousel/Hero_2.jpg" alt="">
-                        <div class="container">
-                            <div class="carousel-caption home-carousel-text">
-                                <h1 class="home-carousel-title col-lg-11">Engineering at FallsBuy.</h1>
-                                <p class="home-carousel-description col-lg-8">FallsBuy engineers and designers are industry leaders introducing game changing innovations every day. Apply for available jobs or join our Talent Community.
-                                    <br>
-                                    <br>
-                                    <a href="http://jobs./go/Engineering-Jobs/364540/" class="learn-more carousel-learn-more">
-                            LEARN MORE
-                            <img src="assets/images//white-arrow.png"></a>
-                                </p>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- SLIDER 2 START -->
-                    <div class="item active">
-                        <img class="img-responsive carousel-img" src="assets/images//home/carousel/Hero_1.jpg" alt="">
-                        <div class="container">
-                            <div class="carousel-caption home-carousel-text">
-                                <h1 class="home-carousel-title col-lg-11">FallsBuy IS A CONNECTED TECHNOLOGIES COMPANY.</h1>
-                                <p class="home-carousel-description col-lg-12">
-                                    Our systems, software and services drive the connected car, enhance the connected enterprise and expand the connected lifestyle. Together with the power of Cloud, Mobility and Analytics, we are connecting people to music, experiences, each other, and the bigger world around them.
-                                    <br>
-                                    <br>
-                                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-weight: 600;">
-                                        <a href="http://news./releases/FallsBuy-unveils-new-logo" class="learn-more carousel-learn-more home-caro-link">Expect brilliance <img src="assets/images//white-arrow.png"></a>
-                                    </span>
-                                </p>
-                                <!--<a href="#" class="learn-more carousel-learn-more">
-                LEARN MORE
-                <img src="assets/images//white-arrow.png"></a>-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- SLIDER 3 START -->
-                    <div class="item">
-                        <img class="img-responsive carousel-img" src="assets/images//home/carousel/Hero_3.jpg" alt="">
-                        <div class="carousel-caption home-carousel-text item3-txt">
-                            <h1 class="home-carousel-title col-lg-11">Corporate<br>Responsibility</h1>
-                            <p class="home-carousel-description col-lg-8">Our sustainability vision is simple and clear: To be a best-in-class employer and provider of technology solutions that are beneficial to the long-term well-being of the people and communities we serve. Learn more about Corporate Responsibility.
-                                <br>
-                                <br>
-                                <a href="http://news./releases/corporate-responsibility" class="learn-more carousel-learn-more">
-                            LEARN MORE
-                            <img src="assets/images//white-arrow.png"></a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--CARDS-->
-            <div class="all-cards">
-                <div class="container">
-                    <div class="row">
-                        <!-- CARD 1 START -->
-                        <div class="col-md-3 col-lg-3">
-                            <div class="thumbnail card">
-                                <a href="http://www./EN-US/Solutions/Car/Pages/INFOTAINMENT.aspx"><img class="img-responsive card-img" src="assets/images//home/carousel-card/ConnectedCar_Card.jpg" alt=""></a>
-                                <div class="caption card-caption">
-                                    <h3 class="card-title">CONNECTED<span>CAR</span></h3>
-                                    <p class="card-description">Navigation, Multimedia, Telematics, Connectivity, Safety &amp; Security systems.</p>
-                                    <p class="right-arrow">
-                                        <a href="http://www./EN-US/Solutions/Car/Pages/INFOTAINMENT.aspx" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- CARD 2 START -->
-                        <div class="col-md-3 col-lg-3">
-                            <div class="thumbnail card">
-                                <a href="http://www./EN-US/Solutions/Home/Pages/Services.aspx"><img class="img-responsive card-img" src="assets/images//home/carousel-card/ConnectedServices_Card.jpg" alt=""></a>
-                                <div class="caption card-caption">
-                                    <h3 class="card-title">CONNECTED<span>SERVICES</span></h3>
-                                    <p class="card-description">Cloud, Mobility &amp; Analytics solutions that enable a connected world.</p>
-                                    <p class="right-arrow">
-                                        <a href="http://www./EN-US/Solutions/Home/Pages/Services.aspx
-" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CARD 3 START -->
-                        <div class="col-md-3 col-lg-3">
-                            <div class="thumbnail card">
-                                <a href="http://www./EN-US/Solutions/Home/Pages/Home.aspx"><img class="img-responsive card-img" src="assets/images//home/carousel-card/LifestyleAudio_Card.jpg" alt=""></a>
-                                <div class="caption card-caption">
-                                    <h3 class="card-title">LIFESTYLE<span>AUDIO</span></h3>
-                                    <p class="card-description">Premium branded audio products for use at home, work, in the car, and on the go.</p>
-                                    <p class="right-arrow">
-                                        <a href="http://www./EN-US/Solutions/Home/Pages/Home.aspx
-" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- CARD 4 START -->
-                        <div class="col-md-3 col-lg-3">
-                            <div class="thumbnail card">
-                                <a href="http://www./EN-US/Solutions/Professional/Pages/Home.aspx#.VbAq2Hl8Ndg"><img class="img-responsive card-img" src="assets/images//home/carousel-card/ProSolutions_Card.jpg" alt=""></a>
-                                <div class="caption card-caption">
-                                    <h3 class="card-title">PROFESSIONAL<span>SOLUTIONS</span></h3>
-                                    <p class="card-description">Integrated audio, video, lighting and control solutions for entertainment venues, cinemas, recording studios, and commercial and public spaces.</p>
-                                    <p class="right-arrow">
-                                        <a href="http://www./EN-US/Solutions/Professional/Pages/Home.aspx#.VbAq2Hl8Ndg" class="custom-arrow-margin"><img src="assets/images//black-arrow.png"></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <!-- GALLERY END -->
-
-
-
-        <!-- LOGO GALLERY START -->
-        <div class="logo-carosuel">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="logo-title">FallsBuy BRANDS</h1>
-                    </div>
-                </div>
-            </div>
-            <!-- LOGO GALLERY END -->
-
-            <!-- CAROUSEL IMAGES START -->
+<!doctype html>
+<html lang="en">   
+   <!-- Added by HTTrack -->
+   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+   <!-- /Added by HTTrack -->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="robots" content="index, follow">
+      <!--[if IE 9]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
+      <![endif]-->
+      <!--[if lte IE 8]>
+      <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie8.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3"></script>	  
+      <![endif]-->
+      <title>Bharath Group of Companies</title>
+      <meta name="description" content="" />      
+      <meta content="Bharath Group of Companies" />     
+     
+      
+      <link href="styles/Bharath/bootstrap.min.css" rel="stylesheet" />
+      <link href="styles/Bharath/fontawesome-all.css" rel="stylesheet" />
+      <link href="styles/Bharath/owl.carousel.css" rel="stylesheet" />
+      <link href="styles/Bharath/owl.theme.default.css" rel="stylesheet" />
+      <link href="styles/Bharath/bharath-com-min.css" rel="stylesheet" />
+      <link href="styles/Bharath/animate.css" rel="stylesheet" />
+      <link href="styles/Bharath/aos.css" rel="stylesheet" />
+      <link href="styles/Bharath/magnific-popup.css" rel="stylesheet" />
+      <meta name="VIcurrentDateTime" content="637730109386858816" />
+      <script type="text/javascript" src="layouts/system/VisitorIdentification.js"></script>     
+   </head>
+   <body class="">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWTKKQN"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <script>
+         function init() {
+         var vidDefer = document.getElementsByTagName('iframe');
+         for (var i=0; i<vidDefer.length; i++) {
+         if(vidDefer[i].getAttribute('data-src')) {
+         vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+         } } }         
+      </script>
+      <!-- window.onload = init; -->
+      <header class="headerSec">
+         <div class="overlay-top"></div>
+         <div class="navPanel fixed-top">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="slider1">
-                        <div class="slide">
-                            <a href="http://www.akg.com/"><img src="assets/images//brands/1.png" style="width:100px;" alt="AKG" title="AKG"></a>
+               <div class="row">
+                  <div class="col-sm-3 col-8 py-2 text-center">
+                     <a class="navbar-brand" href="index.html" title="">
+						<img alt="Bharath Group of Companies" src="images/logo.png" class="img-fluid" loading="lazy"/>
+					 </a>
+                  </div>
+                  <div class="col-sm-9 col-4">
+                     <div class="row mainmenu">
+                        <div class="col-lg-9 col-0">
+                           <div class="ml-5" id="topMenu">
+                              <div id="dismiss" class="d-block d-lg-none"><i class="fas fa-arrow-left"></i></div>
+                              <div class="clearfix"></div>
+                              <ul class="topMenu d-lg-flex d-none">
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">About Us</a></li>
+                                 <li><a href="#">Businesses</a></li>
+                                 <li><a href="#">Team</a></li>
+                                 <li><a href="#">News & Media</a></li>                                 
+                                 <li><a href="#">Contact Us</a></li>
+                              </ul>                              
+                           </div>
                         </div>
-                        <div class="slide">
-                            <a href="#"><img src="assets/images//brands/2.png" alt="AMX" title="AMX" style="width:100px;"></a>
+                        <div class="col-md-3 col-sm-4 col-10 ml-auto">
+                           <div class="row">
+                              <div class="col-sm-6 text-left">
+                                 <div class="row">
+                                    <div class="col-sm-6 col-6">
+                                       <!-- Toggle button to show/hide side top menu -->
+                                       <div class="d-block d-lg-none topNavBtn">
+                                          <button type="button" id="topNavCollapse" class="btn btn-menu">
+                                             <!--<i class="fas fa-align-justify"></i>-->
+                                             <i class="fas fa-bars"></i>
+                                          </button>
+                                       </div>
+                                       <!-- /Toggle button to show/hide top menu -->
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-sm-6 text-left">
+                              </div>
+                           </div>
                         </div>
-                        <div class="slide">
-                            <a href="#"><img src="assets/images//brands/3.png" alt="BSS" title="BSS" style="width:100px;"></a>
-                        </div>
-                        <div class="slide">
-                            <a href="#"><img src="assets/images//brands/4.png" alt="Crown" title="Crown" style="width:100px;"></a>
-                        </div>
-                        <div class="slide">
-                            <a href="#"><img src="assets/images//brands/5.png" alt="DBX" title="DBX" style="width:100px;"></a>
-                        </div>
-                        <div class="slide">
-                            <a href="#"><img src="assets/images//brands/6.png" alt="DigiTech" title="DigiTech" style="width:100px;"></a>
-                        </div>
-                        <div class="slide">
-                            <a href="http://www.jbl.com/"><img src="assets/images//brands/2.png" alt="JBL" title="JBL" style="width:100px;"></a>
-                        </div>
-                    </div>
-                </div><br><br><br><br><br>
+                     </div>
+                     
+                  </div>
+               </div>
             </div>
-        </div>
-        <!-- CAROUSEL IMAGES END -->
-
-
-
-        <!-- THE LATEST NEWS CENTER START -->
-        <div class="the-latest">
+         </div>
+      </header>
+      <!-- /Header -->
+      <!--  Main content Section-->
+      <main role="main">
+         <!-- Banner -->
+         <div class="mainSlider">
+            <div class="owl-carousel owl-theme homeslider">
+               <div class="item active">
+                  <img src="images/1.jpg" alt="" class="image-fluid" loading="lazy">
+               </div>
+			   <div class="item">
+                  <img src="images/2.jpg" alt="" class="image-fluid" loading="lazy">
+               </div>
+			   <div class="item">
+                  <img src="images/3.jpg" alt="" class="image-fluid" loading="lazy">
+               </div>
+			   <div class="item">
+                  <img src="images/4.jpg" alt="" class="image-fluid" loading="lazy">
+               </div>	
+            </div>
+            <div class="container position-relative">
+               <div class="scroll-down">
+                  <a href="#covid19"><span class="blink blink-infinite blink-1"></span><span class="blink blink-infinite blink-2"></span><span class="blink blink-infinite blink-3"></span><span class="blink blink-infinite blink-4"></span><span class="blink blink-infinite blink-5"></span></a>
+               </div>
+            </div>
+         </div>
+         <section class="py-5 position-relative section__covid-donation bg-white" id="covid19">
+            <div class="bg-images"><img src="images/bg-1.png" class="fixed-img" alt="" disablewebedit="False" loading="lazy"></div>
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-7 col-md-7 col-lg-6 clearfix">
-                        <h1 class="logo-title">News</h1>
-                    </div>
-                    <div class="col-sm-5 col-md-5 col-lg-6 text-right">
-                        <h2><a href="http://news./" class="news-arrow">FallsBuy News Center<img src="assets/images//black-arrow.png"></a></h2>
-                    </div>
-
-                </div>
+               <div class="row">
+                  <div class="col-lg-7 pr-lg-5">
+                     <h2 class="text-left sectionHeading sectionHeading-left mb-4">About Us</h2>
+                     <p>Bharath Group, headquartered in Bangalore, India, is one of the country's fastest expanding conglomerates. The principally engaged sectors are real estate, infrastructure, logistics, energy, pharmaceuticals, and mining. Mr. Chetan Prakash Tayal established the Bharath Group in 1984. Under the direction of Mr. Chetan Prakash Tayal, the group has established a standard for others to emulate since its inception. We have placed "Clientele" as the focal point of our group, and all of our operations are motivated by the customer preferences, objectives, and ambitions.</p>
+					 <p>Bharath Group, with over three decades of experience, has indeed been classified as highly seasoned in terms of quality and execution.</p>
+                  </div>
+                  <div class="col-lg-5">
+                     <div class="video-section ytpop2">
+                        <img alt="" src="images/9.jpg" class="img-fluid" loading="lazy">
+                     </div>
+                  </div>
+               </div>
             </div>
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
+         </section>         
+         <div class="section impact-stories" id="footprint">
+            <div class="bg-images" data-aos="fade-up" ><img src="images/bg-3.jpg" alt="Adani" loading="lazy"></div>
+            <div class="container position-relative" data-aos="fade-up" >
+               <h2 class="text-center sectionHeading">Businesses</h2>
+               <p class="txt-md">Bharath Group, headquartered in Bangalore, India, is one of the country's fastest expanding conglomerates. The group's core sectors are real estate, finance, infrastructure, logistics, energy, pharmaceuticals, and mining. Mr. Chetan Pakash Tayal started the Bharath Group in 1984. Under the direction of Mr. Chetan Prakash Tayal, the group has set a high standard for others to follow since its start. "Customers" are the focal point of our group, and all of our actions are motivated by the customer's requirements, desires, and aspirations.</p>
+            </div>
+         </div>
+         <section>
+            <div class="">
+               <div class="large-12 columns" data-aos="fade-up">
+                  <div class="owl-carousel owl-theme" id="sustanibility"  >
+                     <div class="item">
+                        <a href="blogs/the-future-of-infrastructure-is-green.html">
+                           <div class="sustanibility_thumb">
+                              <img src="images/2.jpg" alt="Adani" loading="lazy">
+                           </div>
+                           <div class="sus-tile">
+                              <div class="txt-overlay">
+                                 <h3>Gold Tower</h3>
+                                 <p>Gold Tower is a prestigious commercial complex located in the heart of the city on main Residency Road (commercial hub), Bangalore.</p>
+                                 <p>Read more</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="item">
+                        <a href="blogs/green-hydrogen-holds-strong-promise-for-india-energy-self-reliance.html">
+                           <div class="sustanibility_thumb">
+                              <img src="images/6.jpg" alt="Adani" loading="lazy">
+                           </div>
+                           <div class="sus-tile">
+                              <div class="txt-overlay">
+                                 <h3>Radhakrishna Complex</h3>
+                                 <p>Radhakrishna Complex is situated on 80 Feet Road in Rajajinagar, Bangalore. This complex has built-up area of 25,000 sq.ft and houses Shops and Offices.</p>
+                                 <p>Read more</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="item">
+                        <a href="blogs/green-hydrogen-will-be-a-game-changer.html">
+                           <div class="sustanibility_thumb">
+                              <img src="images/7.jpg" alt="Adani" loading="lazy">
+                           </div>
+                           <div class="sus-tile">
+                              <div class="txt-overlay">
+                                 <h3>Chetan Layout</h3>
+                                 <p>Chetan Layout is spread across 60 acres and developed into Township located off bhannerghatta road, this layout is well connected and closer to all</p>
+                                 <p>Read more</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section business-section position-relative d-block bg-white aos-init aos-animate" data-aos="fade-up">
+            <div class="bg-images"><img src="images/bg-2.png" class="fixed-img" alt="" width="1383" height="961" disablewebedit="False" /></div>
+            <div class="container position-relative">
+               <h2 class="text-center sectionHeading">Team</h2>
+               <p class="txt-center mt-3">BBL is real estate arm of Bharath Group with major activity into real estate development. BBL is an ISO 9001-2015 certified company and member of Confederation of Real Estate Developers Association of India-Karnataka(CREDAI).</p>
+               <div class="row mt-5 business">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                     <div class="business-box">
+                        <div>
+                           <div class="txt-center">
+                              <img src="images/11.png" alt="" disablewebedit="False" style="max-height:70px;"/>
+                           </div>
+                           <div class="business-content">
+                              <span class="txt-center">Real Estate</span>
+                              <p class="p-0 m-0">
+                                 <a href="businesses.html#EnergyUtilities">Know more<i class="fa fa-angle-right"></i></a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                     <div class="business-box">
+                        <div>
+                           <div class="txt-center">
+                              <img src="images/14.jpg" alt="" disablewebedit="False" style="max-height:70px;"/>
+                           </div>
+                           <div class="business-content">
+                              <span class="txt-center">Infrastructure</span>
+                              <p class="p-0 m-0">
+                                 <a href="businesses.html#TransportationLogistics">Know more<i class="fa fa-angle-right"></i></a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                     <div class="business-box">
+                        <div>
+                           <div class="txt-center">
+                              <img src="images/13.jpg" alt="" disablewebedit="False" style="max-height:70px;"/>
+                           </div>
+                           <div class="business-content">
+                              <span class="txt-center">Logistics</span>
+                              <p class="p-0 m-0">
+                                 <a href="businesses.html#Incubation">Know more<i class="fa fa-angle-right"></i></a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                     <div class="business-box">
+                        <div>
+                           <div class="txt-center">
+                              <img src="images/12.png" alt="" disablewebedit="False" style="max-height:70px;"/>
+                           </div>
+                           <div class="business-content">
+                              <span class="txt-center">Mining</span>
+                              <p class="p-0 m-0">
+                                 <a href="businesses.html#Incubation">Know more<i class="fa fa-angle-right"></i></a>
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>  
+               </div>
+               <p>
+                  <a href="#" id="loadMore" class="btn btn-blue mt-5">Explore More</a>
+               </p>
+            </div>
+         </section>
+         <section class="bg-gray py-5 position-relative d-block" data-aos="fade-up">
+            <div class="container position-relative d-block">
+               <div id="big" class="owl-carousel owl-theme">
+                  <div class="slideItem gallery-main-img">
+                     <div class="row no-gutters">
+                        <div class="col-lg-8">
+                           <div class="video-section ytpop" data-toggle="modal" data-value="https://www.youtube.com/embed/lIA9LyUqVw4" data-target="#video-01">
+                              <img alt="" src="images/3.jpg" loading="lazy" />
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="video-content p-4">
+                              <h3>Bharath Hi-Tecch Builders Pvt Ltd (BBL)</h3>
+                              <p class="mb-3">BBL is real estate arm of Bharath Group with major activity into real estate development. BBL is an ISO 9001-2015 certified company and member of Confederation of Real Estate Developers Association of India-Karnataka(CREDAI).</p>
+                              <p><a href="index.html" class="ytpop" data-value="https://www.youtube.com/embed/lIA9LyUqVw4" data-toggle="modal" data-target="#video-01">Watch Now</a></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slideItem gallery-main-img">
+                     <div class="row no-gutters">
+                        <div class="col-lg-8">
+                           <div class="video-section ytpop" data-toggle="modal" data-value="https://www.youtube.com/embed/HAEwrEgRtko" data-target="#video-01">
+                              <img alt="" src="images/6.jpg" loading="lazy" />
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="video-content p-4">
+                              <h3>NCLR Bharath HI-TECCH INFRASTRUCTURE Pvt Ltd</h3>
+                              <p class="mb-3">NCLR is a class one electrical contracting company of Bharath Group based in Bangalore and incorporated under the provisions of companies Act, 1956.</p>
+                              <p><a href="index.html" class="ytpop" data-toggle="modal" data-value="https://www.youtube.com/embed/HAEwrEgRtko" data-target="#video-01">Watch Now</a></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="slideItem gallery-main-img">
+                     <div class="row no-gutters">
+                        <div class="col-lg-8">
+                           <div class="video-section ytpop" data-toggle="modal" data-value="https://www.youtube.com/embed/xaicTaZlpEM" data-target="#video-01">
+                              <img alt="" src="images/5.jpg" loading="lazy" />
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="video-content p-4">
+                              <h3>SMS On Wheels Logistics & Road Lines Pvt Ltd</h3>
+                              <p class="mb-3">SMS on wheels Logistics and Road Lines Pvt Ltd are logistic arms of Bharath Group based in Bangalore and incorporated under the provisions of companies Act, 1956.</p>
+                              <p><a href="index.html" class="ytpop" data-toggle="modal" data-value="https://www.youtube.com/embed/xaicTaZlpEM" data-target="#video-01">Watch Now</a></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>                  
+               </div>
+               <div class="owlthumb home-video-thumb">
+                  <div id="thumbs" class="owl-carousel home-video-thumb owl-theme py-3 px-1">
+                     <div class="slideItem gallery-item">
+                        <img alt="" src="images/3.jpg" class="img-fluid w-100 h-100" loading="lazy" />
+                     </div>
+                     <div class="slideItem gallery-item">
+                        <img alt="" src="images/6.jpg" class="img-fluid w-100 h-100" loading="lazy" />
+                     </div>
+                     <div class="slideItem gallery-item">
+                        <img alt="" src="images/5.jpg" class="img-fluid w-100 h-100" loading="lazy" />
+                     </div>                     
+                  </div>
+               </div>
+            </div>
+         </section>         
+         <section class="bg-gray">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4 newsupdate mb-3">
+                     <div class="bg-white box-shadow p-4 h-100" data-aos="fade-right"  >
+                        <h3 class="section-heading">News and Updates</h3>
+                        <ul class="ul-news-section">
+                           <li>
+                              <p><a href="-/media/Project/Adani/Media-Coverage/2021/2021_10_09%20FE%20AGEL%20ATL%20COP262125.pdf?la=en" target="_blank">Gold Tower is a prestigious commercial complex located in the heart of the city on main Residency Road (commercial hub), Bangalore. This 1,00,000 sq.ft.</a><span>Nov 10, 2021  | Financial Express</span></p>
+                           </li>
+                           <li>
+                              <p><a href="-/media/Project/Adani/Media-Coverage/2021/Adani%20plans%20to%20invest%20USD%2050-70%20Bn2125.pdf?la=en" target="_blank">Radhakrishna Complex is situated on 80 Feet Road in Rajajinagar, Bangalore.</a><span>Oct 05, 2021  | Business Standard</span></p>
+                           </li>
+                           <li>
+                              <p><a href="-/media/Project/Foundation/Newsroom/Media-Coverage/2021/Republic%20Tv%20Adani%20Group%20Covid%20reilef%20work2125.mp4?la=en" target="_blank">BBL is real estate arm of Bharath Group with major activity into real estate development.</a><span>Jun 03, 2021  |Republic TV</span></p>
+                           </li>
+                           <li>
+                              <p><a href="-/media/Project/Adani/Media-Coverage/2020/2020_09_29%20AM%20India%20to%20be%20second%20largest%20economy%20by%2020502125.jpg?la=en" target="_blank">SMS on wheels Logistics and Road Lines Pvt Ltd are logistic arms of Bharath Group based in Bangalore and incorporated under the provisions of companies Act, 1956.</a><span>Sep 29, 2020  | Ahmedabad Mirror</span></p>
+                           </li>
+                        </ul>
+                        <p class="text-left mt-4"><a href="#" class="btn btn-gradient">View more</a></p>
+                     </div>
+                  </div>
+                  <div class="col-lg-8 mb-3">
+                     <a href="About-us/Chairman-Message.html">
+                        <div class="row no-gutters zoomin h-100" data-aos="fade-left" >
+                           <div class="col-sm-6">
+                              <div class="p-4 bg-blue h-100">
+                                 <h3 class="section-heading text-white">Chairman’s Corner</h3>
+                                 <p class="txt-lg text-white mb-5">Our objective is to be a leader in all the 6 verticals namely Real
+estate, Finance, Infrastructure, Agriculture, Logistics and Mining.</p>
+                                 <p class="ceo">Mr. Chetan Prakash Tayal<span>Chairman, Bharath Groups</span></p>
+                              </div>
+                           </div>
+                           <div class="col-sm-6">
+                              <div class="ceo-img h-100">
+                                 <img src="images/Chairman.png" alt="Adani" class="img-fluid w-100">
+                              </div>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!--/News & CEO-->
+         <div class="pageContent">
+            <section class="py-4 bg-gray">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-lg-8 mt-3">
+                        <div class="border-l mb-4" data-aos="fade-up">
+                           <h2 class="txt-lg mb-3">Sustainability</h2>
+                           <p>SMS on wheels Logistics and Road Lines Pvt Ltd are logistic arms of Bharath Group based in Bangalore and incorporated under the provisions of companies Act, 1956. The company is engaged in the business of logistics from the past one decade. SMS was a separate company which was brought under the folds of Bharat Group </p>
+                        </div>
+                        <p class="text-left mt-4 mb-5" data-aos="fade-up"><a href="#" class="btn btn-gradient">View more</a></p>
+                        <div class="row no-gutters mb-3 zoom-img">
+                           <div class="col-md-6" data-aos="fade-up">
+                              <img alt="" class="img-fluid w-100 h-100" src="images/7.jpg" loading="lazy" />
+                           </div>
+                           <div class="col-md-6 sustainability-h" data-aos="fade-up">
+                              <div class="bg-white p-4 h-100">
+                                 <h3 class="sectionheading">Logistics</h3>
+                                 <p>NCLR is a class one electrical contracting company of Bharath Group based in Bangalore and incorporated under the provisions of companies Act, 1956.</p>
+                                 <p class="mt-3"><a href="Sustainability/Communities.html" class="txt-xs">Read more</a></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4  mt-3 mb-3">
+                        <div class="row no-gutters h-100 bg-white  zoom-img">
+                           <div class="col-lg-12 col-sm-6">
+                              <img alt="" src="images/8.jpg" class="img-fluid w-100 h-100" loading="lazy" />
+                           </div>
+                           <div class="col-lg-12 col-sm-6 sustainability-v" data-aos="fade-up">
+                              <div class="bg-white px-3 pb-3 h-100">
+                                 <h3 class="sectionheading mt-4">Agriculture</h3>
+                                 <p>Afforested over 3000+ Ha of Mangroves and planted over 4.4 million trees</p>
+                                 <p class="mt-3"><a href="Sustainability/Environment.html" class="txt-xs">Read more</a></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <section class="bg-gray pb-5 pt-3" data-aos="fade-up">
+            <div class="container">
+               <h2 class="border-l txt-lg mb-3">Our Group Websites</h2>
+               <div class="owl-carousel owl-theme" id="other-ventures">
+                  <div class="item">
+                     <a href="#">
+                     <img src="images/3.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Real Estate</a></p>
+                  </div>
+                  <div class="item">
+                     <a href="#">
+                     <img src="images/9.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Infrastructure</a></p>
+                  </div>
+                  <div class="item">
+                     <a href="#">
+                     <img src="images/5.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Logistics</a></p>
+                  </div>
+                  <div class="item">
+                     <a href="https://www.adanigreenenergy.com/">
+                     <img src="images/6.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Mining</a></p>
+                  </div>
+                  <div class="item">
+                     <a href="https://www.adanigas.com/">
+                     <img src="images/8.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Agriculture</a></p>
+                  </div>
+				  <div class="item">
+                     <a href="#">
+                     <img src="images/9.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Infrastructure</a></p>
+                  </div>
+                  <div class="item">
+                     <a href="#">
+                     <img src="images/5.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Logistics</a></p>
+                  </div>
+                  <div class="item">
+                     <a href="https://www.adanigreenenergy.com/">
+                     <img src="images/6.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Mining</a></p>
+                  </div>
+                  <div class="item">
+                     <a href="https://www.adanigas.com/">
+                     <img src="images/8.jpg" loading="lazy">
+                     </a>
+                     <p class="txt-xs text-center"><a href="#" target="_blank">Agriculture</a></p>
+                  </div> 
+               </div>
+            </div>
+         </section>
+      </main>
+      <!-- /.container -->
+      <!--  /Main content Section-->
+      <!-- To top -->
+      <a id="back-to-top" href="#" class="back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-angle-up"></span></a>
+      <!-- /To top -->
+      <!-- Footer -->
+      <footer class="pt-5 bg-white position-relative d-block">
+         <div class="container">
+            <div class="row footerPanel2">
+				<div class="col-md-2 col-6 d-md-block d-none">                  
+                     <h5><a href="About-us.html">About us</a></h5>
+                     <h5><a href="Sports.html">Businesses</a></h5>
+                     <h5><a href="Blogs.html">Team</a></h5>
+                     <h5><a href="contact-us.html">Contact us</a></h5>
+                     <h5><a href="covid19updates.html">News & Media</a></h5>                  
+               </div>
+               <div class="col-md-3 ft-submenu col-6 d-md-block d-none">
+                  <h5><a href="businesses.html">Businesses</a></h5>
+                  <ul class="ft-business">
+                     <li><a href="#">Incubation</a></li>
+                     <li><a href="#">Airports</a></li>
+                     <li><a href="#">Others</a></li>
+                     <li><a href="#">Companies</a></li>
+                     <li><a href="#">Bharath Enterprises Ltd</a></li>                       
+                  </ul>
+               </div>
+               <div class="col-md-3 col-6 d-md-block d-none">
+                  <h5><a href="#">Sustainability</a></h5>
+                  <ul>
+                     <li><a href="#">Communities</a></li>
+                     <li><a href="#">Environment</a></li>
+                     <li><a href="#">Safety First</a></li>
+                     <li><a href="#">Waste Management</a></li>
+                     <li><a href="#">Water Management</a></li>
+                     <li><a href="#">Operational Efficiency</a></li>
+                  </ul>
+               </div>
+               
+               <div class="col-md-4">
+                  <div class="row border-left ft-logo">
+                     <div class="col-sm-12 mb-3 text-center">
+                        <ul class="ft-social">
+                           <li><a href="#" target="_blank"><i class="fab fa-facebook-f"> </i></a></li>
+                           <li><a href="#" target="_blank"><i class="fab fa-twitter"> </i></a></li>
+                           <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"> </i></a></li>
+                           <li><a href="#" target="_blank"><i class="fab fa-instagram"> </i></a></li>
+                           <li><a href="#" target="_blank"><i class="fab fa-youtube"> </i></a></li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-12 text-center">
+                        <ul class="terms-link d-md-none">
+                           <li class="d-inline-block"><a href="privacy-policy.html" class="txt-blue">Privacy Policy</a></li>
+                           <li class="d-inline-block"><a href="disclaimer.html" class="txt-blue">Legal Disclaimer</a></li>
+                           <li class="d-inline-block"><a href="terms-and-conditions.html" class="txt-blue">Terms &amp; Conditions</a></li>
+                        </ul>
+                     </div>
+                     <div class="col-sm-12 text-center">
+                        <img src= "images/logo.png" class="img-fluid" loading="lazy" style="height:130px;"/>
+                     </div>
+                     <div class="col-sm-12 d-md-none mb-3">
+                        <p class="sitemap-link bg-gradient d-block p-2">Sitemap<i class="fa fa-angle-down"></i></p>
+                     </div>
+                     <div class="col-sm-12 d-none ft-mobilemenu">
                         <div class="row">
-                            <!-- COL1 START -->
-                            <div class="col-lg-3">
-                                <div class="row">
-                                    <a href="http://news./releases/harman-welcomes-world-champion-soccer-star-jerome-boateng-as-brand-ambassador" target="_blank">
-                                        <div class="col-lg-12 news1" style="background: url('assets/images//home/news/news1.jpg') #00a4e3 no-repeat center center; background-size: cover">
-                                            <div class="desc">
-                                                <p>World Cup champion soccer/football player Jerome Boateng will serve as a Global Brand Ambassador</p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="http://investor./releasedetail.cfm?ReleaseID=918100" target="_blank">
-                                        <div class="col-lg-12 news2" style="background: url('assets/images//home/news/news2.jpg') #00a4e3 no-repeat center center; background-size: cover">
-                                            <div class="desc">
-                                                <p>FallsBuy Achieves Automotive SPICE Level 3 Certification</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- COL1 END -->
-
-
-                            <!-- COL2 START -->
-                            <div class="col-lg-9">
-                                <div class="row">
-                                    <a href="http://news./releases/FallsBuy-names-phillip-eyler-president-of-infotainment-division" target="_blank">
-                                        <div class="col-lg-9 news3" style="background: url('assets/images//home/news/news3.jpg') #00a4e3 no-repeat center center; background-size: cover">
-                                            <div class="desc">
-                                                <p>FallsBuy Names Phillip Eyler President of Infotainment Division</p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="http://news./releases/new-audi-a4-models-to-feature-bang-olufsen" target="_blank">
-                                        <div class="col-lg-3 news4" style="background: url('assets/images//home/news/news4.jpg') #00a4e3 no-repeat center center; background-size: cover">
-                                            <div class="desc">
-                                                <p>New Audi A4 Models to Feature Bang & Olufsen</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="row">
-                                    <a href="http://news./releases/FallsBuy-announces-upcoming-investor-events-2967362" target="_blank">
-                                        <div class="col-lg-5 news5" style="background: url('assets/images//home/news/news5.jpg') #00a4e3 no-repeat center center; background-size: cover">
-                                            <div class="desc">
-                                                <p>FallsBuy Announces Upcoming Investor Events</p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="http://fortune.com/2015/06/04/fortune-500-newcomers/" target="_blank">
-                                        <div class="col-lg-7 news6" style="background: url('assets/images//home/news/news6.jpg') #00a4e3 no-repeat center center; background-size: cover">
-                                            <div class="desc">
-                                                <p>FallsBuy International returns to the Fortune 500 in 2015</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-
-                            </div>
-                            <!-- COL1 END -->
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="businesses.html">Businesses</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="Sustainability.html">Sustainability</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="About-us.html">About us</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="Sports.html">Sports</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="Blogs.html">Blogs</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="contact-us.html">Contact us</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="covid19updates.html">COVID19</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="Downloads.html">Downloads</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="Commercials.html">Commercials</a></h5>
+                           </div>
+                           <div class="col-sm-6 col-6">
+                              <h5 class="text-center"><a href="https://careers.adani.com/" target="_blank" >Careers</a></h5>
+                           </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- THE LATEST NEWS CENTER START -->
-
-        <!-- ABOUT FallsBuy START -->
-        <div class="about-harman">
+                     </div>
+                  </div>
+               </div>
+            </div>            
+         </div>
+         <div class="footerBtmPanel mt-3 py-2 d-md-block d-none">
             <div class="container">
-                <div class="row">
-                    <div class="cl-xs-12 col-md-8 col-lg-8">
-                        <h1 class="logo-title">About </h1>
-                        <p class="about-description"><b> Fallsbuy designs and engineers connected products and solutions for consumers, automakers, and enterprises worldwide, including audio, visual and infotainment systems; enterprise automation solutions; and software services. With leading brands including Fallsbuy Kardon<sup>®</sup>, Lexicon<sup>®</sup> , Mark Levinson<sup>®</sup> and Revel<sup>®</sup>, Fallsbuy is admired by audiophiles, musicians and the entertainment venues where they perform around the world.</b></p>
-                        <p class="about-description remaining-description">Fallsbuy also is a technology and integration services leader for the Automotive, Mobile, Telecommunications and Enterprise markets. More than 25 million automobiles on the road today are equipped with Fallsbuy audio and infotainment systems.</p>
-                        <p class="about-description remaining-description">The Company’s software solutions power billions of mobile devices and systems that are connected, integrated, personalized, adaptive and secure across all platforms, from the work and home to car and mobile.</p>
-                        <p class="about-description remaining-description">Fallsbuy has a workforce of approximately 25,000 people across the Americas, Europe, and Asia and reported sales of $5.9 billion during the last 12 months ended March 31, 2015.</p>
-                        <a class="learn-more" href="http://www./EN-US/OurCompany/Pages/ExperienceFallsbuy.aspx">Learn More</a>
-                    </div>
-
-                    <div class="cl-xs-12 col-md-4 col-lg-4">
-                        <h2 class="sub-title">FINANCIAL NEWS</h2>
-                        <h2 class="rate">$112.78<span class="usd"> USD</span> <span class="percent">+ 0.60%</span></h2>
-                        <h6 class="rate-update-time">Last trade price as of 7/13/15 12:00 pm</h6>
-                        <h3 class="har"><b>HAR</b> <span class="nyse"><b>NYSE</b></span></h3>
-                        <h3 class="volume"><b>Volume:</b> 830,900</h3>
-                        <!-- STAY CONNECTED START -->
-                        <h2 class="sub-title">STAY CONNECTED</h2>
-                        <ul class="stay-connected-social-icons">
-                            <li><a href="https://www.facebook.com/FallsbuyInt?_rdr=p"><i class="fa fa-facebook fa-2x"></i></a></li>
-                            <li><a href="https://twitter.com/Fallsbuy"><i class="fa fa-twitter fa-2x"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/Fallsbuy-international"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                            <li><a href="https://www.youtube.com/user/FallsbuyIntl"><i class="fa fa-youtube fa-2x"></i></a></li>
-                            <li><a href="https://www.pinterest.com/Fallsbuyint/"><i class="fa fa-pinterest fa-2x"></i></a></li>
-                            <li><a href="https://plus.google.com/+FallsbuyIntl/videos"><i class="fa fa-google-plus fa-2x"></i></a></li>
+               <div class="row row-grid align-items-end ftrBtmInner">
+                  <div class="col-12 col-md-auto text-center text-md-left">
+                     <div class="d-none d-md-block">© 2020 Bharath Group of Companies</div>
+                  </div>
+                  <div class="col-12 col-md-auto text-center text-md-left ml-md-auto">
+                     <div class="footerMenu">
+                        <ul class="ft-policy-links">
+                           <li>
+                              <a href="#">
+                              Privacy Policy
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                              Legal Disclaimer
+                              </a>
+                           </li>
+                           <li>
+                              <a href="#">
+                              Terms &amp; Conditions
+                              </a>
+                           </li>
                         </ul>
-                        <!-- STAY CONNECTED END -->
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <!-- ABOUT Fallsbuy START -->
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <!-- FOOTER START -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <ul>
-                        <!--FOOTER BRAND LOGO-->                        
-
-                        <li><a href="http://www./EN-US/OurCompany/Pages/ExperienceHarman.aspx">Company</a></li>
-                        <li><a href="http://jobs./">Careers</a></li>
-                        <li><a href="http://investor./contactus.cfm">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <ul>
-                        <p>Solutions</p>
-                        <li><a href="http://www./EN-US/Solutions/Home/Pages/Home.aspx">Lifestyle Audio</a></li>
-                        <li><a href="http://www./EN-US/Solutions/Car/Pages/INFOTAINMENT.aspx">Connected Car</a></li>
-                        <li><a href="http://www./EN-US/Solutions/Professional/Pages/Home.aspx">Professional Solutions</a></li>
-                        <li><a href="http://www./EN-US/Solutions/Home/Pages/Services.aspx">Connected Services</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <ul>
-                        <p>Investors</p>
-                        <li><a href="http://investor./stockquote.cfm">Stock Information</a></li>
-                        <li><a href="http://investor./financials.cfm">Finanical Information</a></li>
-                        <li><a href="http://investor./releases.cfm">Press Releases</a></li>
-                        <li><a href="http://investor./events.cfm">Events & Presentations</a></li>
-                        <li><a href="http://investor./annual-proxy.cfm">Proxy & Annual General Meeting</a></li>
-                        <li><a href="http://investor./governance.cfm">Corporate Governance</a></li>
-                        <li><a href="http://investor./contactus.cfm">Contact</a></li>
-                        <li><a href="http://investor./alerts.cfm">Shareholder Tools</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                    <ul>
-                        <p>Innovation</p>
-                        <li><a href="http://www.harmaninnovation.com/">Innovation Hub</a></li>
-                        <li>
-                            <a href="http://developer./site/global/home/p_home.gsp
-">Developer Community</a>
-                        </li>
-                        <li><a href="#">Resources</a></li>
-                    </ul>
-
-                    <ul>
-                        <p>News</p>
-                        <li><a href="http://news./">Newsroom Home</a></li>
-                    </ul>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <p>Fallsbuy Social Channels</p>
-                    <ul class="footer-social-icons">
-                        <li><a href="http://www./facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://www.twitter.com/?"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="http://www.youtube.com/user/Intl"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="http://pinterest.com/int"><i class="fa fa-pinterest"></i></a></li>
-                        <li><a href="https://plus.google.com/110887771381308393284"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div>
-    </footer>
-    <!-- FOOTER END -->
-
-
-
-
-
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- BXSLIDER JS START -->
-    <script src="assets/js/jquery.bxslider.js"></script>
-    <script src="assets/js/common.js"></script>
-
-</body>
-
+         </div>
+      </footer>
+      <!-- /Footer -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <script src="scripts/Bharath/jquery.min.js"></script>
+      <script src="scripts/Bharath/popper.min.js"></script>
+      <script src="scripts/Bharath/bootstrap.min.js"></script>
+      <script src="scripts/Bharath/owl.carousel.min.js"></script>
+      <script src="scripts/Bharath/jquery.magnific-popup.min.js"></script>
+      <script src="scripts/Bharath/carousle-slider.js"></script>
+      <script src="scripts/Bharath/owl-thumbslider.js"></script>
+      <script src="scripts/Bharath/bharath-group-custom.js"></script>
+      <script src="scripts/Bharath/aos.js"></script>
+      <script src="scripts/Bharath/bharathContactForm.js"></script>
+      <script src="scripts/Bharath/bharathSubscribeForm.js"></script>
+      <script>
+         AOS.init({
+                      easing: 'ease-in-out-sine'
+                  });
+      </script> 
+      <script>
+         $('.modal').on('shown.bs.modal', function () {
+           var url = $('.modal.show iframe').attr('data-src');
+           $('.modal.show iframe').attr("src", url);
+         });
+      </script>
+   </body>
+   <!-- Mirrored from www.adani.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Nov 2021 13:17:10 GMT -->
 </html>
